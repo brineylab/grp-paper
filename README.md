@@ -1,7 +1,7 @@
-# Baseline Antibody Repertoire Project
+# Baseline Human Antibody Repertoire Project
 
 This repository contains code and data used for analysis of the baseline human antibody repertoire. Briefly, we performed
-ultra-deep sequencing of the antibody repertoires of 10 healthy, adult subjects (approxmately 3 billion total antibody sequences). This sequencing revealed a massively diversity antibody repertoire with a surprisingly high amount of overlap between the repertoires of different subjects.
+ultra-deep sequencing of the antibody repertoires of 10 healthy, adult subjects (approxmately 3 billion total antibody sequences). This sequencing revealed a massively diverse antibody repertoire with surprisingly high overlap between the repertoires of different subjects.
 
 ## Code
 The code used in this project is assembled into a series of Juypter notecooks. There are two sets of notebooks, those containing code used for [**DATA PROCESSING**](https://github.com/briney/grp_paper/tree/master/data_processing) and those containing code used to [**MAKE FIGURES**](https://github.com/briney/grp_paper/tree/master/make_figures). GitHub will render each of the notebooks, but the code cannot be executed from within GitHub. If you'd like to actually run the code contained in the notebooks, you must clone the repository.
