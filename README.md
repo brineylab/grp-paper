@@ -9,7 +9,10 @@ The code used in this project is assembled into a series of Juypter notecooks. T
 **_NOTE:_** *Whenever possible, the intermediate datasets required to run the code are included in this repository, however, many intermediate datasets are too large to be included. In such cases, links to the required datasets are provided in the appropriate notebook.*
 
 ## Datasets  
-Raw and processed datasets from each subject can be downloaded using the following links. Some of these datasets are quite large (the compressed raw FASTQs are roughly 100GB per subject, and the uncompressed JSON datasets range from ~100GB to nearly 1TB):
+We have generated several large datasets, in two primary groups: antibody sequences from healthy adult subjects, and synthetic antibody sequences using statistical models of V(D)J recombination. 
+
+### Antibody sequencing data
+Raw and processed datasets from each subject can be downloaded using the following links. Some of these datasets are quite large (the compressed raw FASTQs are roughly 100GB per subject, and the uncompressed JSON datasets range from ~100GB to nearly 1TB).
 
   - 316188
     - Sequences: [**raw FASTQs**](http://burtonlab.s3.amazonaws.com/sequencing-data/hiseq_2016-supplement/316188_HNCHNBCXY_raw-fastqs.tar.gz), [**consensus FASTAs**](http://burtonlab.s3.amazonaws.com/sequencing-data/hiseq_2016-supplement/316188_HNCHNBCXY_consensus_UID18-cdr3nt-90_071817.tar.gz)
@@ -55,8 +58,9 @@ Raw and processed datasets from each subject can be downloaded using the followi
 For each subject, there are a total of 18 samples: 3 technical replicates of each of 6 biological replicates. Biological replicates refer to different aliquots of peripheral blood monomuclear cells (**PBMCs**), from which total RNA was separately isolated and processed. Thus, sequences or clonotypes found in multiple biological replicates are assumed to have independently occurred in different cells. Technical relicates refer to independent library preparations using the same aliquot of PBMC-derived RNA. In each of the above datasets, samples 1-6 are biological replicates. Samples 7-12 and 13-18 are technical replicates of samples 1-6.
 
 Due to technical issues, the sequence data for subject 326797 was spread across two HiSeq flowcells. Thus, the raw FASTQs and FASTQC results can be downloaded in two separate batches. Starting with the first processed dataset (UMI-corrected consensus FASTAs), reads from both flowcells were pooled.  
-<br>  
-In addition to repertoire sequencing data, we also generated synthetic antibody sequences using [IGoR](https://github.com/qmarcou/IGoR). Two datasets of synthetic sequences are available:
+
+### Synthetic antibody sequences 
+We generated synthetic antibody sequences using [IGoR](https://github.com/qmarcou/IGoR). Two datasets of synthetic sequences are available. As with the repertoire sequencing datasets above, the annotated datasets are quite large (uncompressed, each exceeds 1TB in size).
 
   - Ten batches of 100M synthetic sequences, generated with IGoR's default V(D)J recombination model:
     - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_default-model_fastas.tar.gz)
