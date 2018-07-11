@@ -66,6 +66,7 @@ We generated synthetic antibody sequences using [IGoR](https://github.com/qmarco
     - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_default-model_fastas.tar.gz)
     - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/synthetic_default-model_minimal.tar.gz)
   - Ten batches of 100M synthetic sequences, generated with subject-specific recombination models, inferred by IGoR using 500,000 unmutated antibody sequences from each subject:
+    - [**Naive sequences used for model inference**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_naive_inference_input.tar.gz)
     -  [**Subject-specific IGoR models**](http://burtonlab.s3.amazonaws.com/GRP_github_data/subject-specific_igor_models.tar.gz)
     - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_subject-specific-models_fastas.tar.gz)
     - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/synthetic_subject-specific-models_minimal.tar.gz)
