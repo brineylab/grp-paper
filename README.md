@@ -4,7 +4,7 @@ This repository contains code and data used for analysis of the baseline human a
 ultra-deep sequencing of the antibody repertoires of 10 healthy, adult subjects (approxmately 3 billion total antibody sequences). This sequencing revealed a massively diversity antibody repertoire with a surprisingly high amount of overlap between the repertoires of different subjects.
 
 ## Code
-The code used in this project is assembled into a series of Juypter notecooks. There are two sets of notebooks, those containing code used for [**DATA PROCESSING**](https://github.com/briney/grp_paper/tree/master/data_processing) and those containing code used to [**MAKE FIGURES**](https://github.com/briney/grp_paper/tree/master/make_figures).
+The code used in this project is assembled into a series of Juypter notecooks. There are two sets of notebooks, those containing code used for [**DATA PROCESSING**](https://github.com/briney/grp_paper/tree/master/data_processing) and those containing code used to [**MAKE FIGURES**](https://github.com/briney/grp_paper/tree/master/make_figures). GitHub will render each of the notebooks, but the code cannot be executed from within GitHub. If you'd like to actually run the code contained in the notebooks, you must clone the repository.
 
 **_NOTE:_** *Whenever possible, the intermediate datasets required to run the code are included in this repository, however, many intermediate datasets are too large to be included. In such cases, links to the required datasets are provided in the appropriate notebook.*
 
@@ -26,4 +26,12 @@ For each subject, there are a total of 18 samples: 3 technical replicates of eac
 
 Due to technical issues, the sequence data for subject 326797 was spread across two HiSeq flowcells. Thus, the raw FASTQs may be downloaded in two separate batches. Starting with the first processed dataset (UMI-corrected consensus FASTAs), reads from both flowcells were pooled.
 
+## Requirements
+
+  - Python 3.3+ (although Python 2.7 may work for many or most notebooks, this has not been tested)
+  - [Jupyter Notebook](https://jupyter.org/install)
+
+*Additionally, each notebook may require additional third-party Python packages. Any notebook-specific requirements, as well as instructions for package installation with [pip](https://pip.pypa.io/en/stable/installing/), are provided in each notebook.*
+
+If you're new to Python, a great way to get started is to install the [Anaconda Python distribution](https://www.continuum.io/downloads), which includes pip as well as a ton of useful scientific Python packages.
 
