@@ -24,7 +24,17 @@ Raw and processed datasets from each subject can be downloaded using the followi
 
 For each subject, there are a total of 18 samples: 3 technical replicates of each of 6 biological replicates. Biological replicates refer to different aliquots of peripheral blood monomuclear cells (**PBMCs**), from which total RNA was separately isolated and processed. Thus, sequences or clonotypes found in multiple biological replicates are assumed to have independently occurred in different cells. Technical relicates refer to independent library preparations using the same aliquot of PBMC-derived RNA. In each of the above datasets, samples 1-6 are biological replicates. Samples 7-12 and 13-18 are technical replicates of samples 1-6.
 
-Due to technical issues, the sequence data for subject 326797 was spread across two HiSeq flowcells. Thus, the raw FASTQs may be downloaded in two separate batches. Starting with the first processed dataset (UMI-corrected consensus FASTAs), reads from both flowcells were pooled.
+Due to technical issues, the sequence data for subject 326797 was spread across two HiSeq flowcells. Thus, the raw FASTQs may be downloaded in two separate batches. Starting with the first processed dataset (UMI-corrected consensus FASTAs), reads from both flowcells were pooled.  
+<br>  
+In addition to repertoire sequencing data, we also generated synthetic antibody sequences using [IGoR](https://github.com/qmarcou/IGoR). Two datasets of synthetic sequences are available:
+
+  - Ten batches of 100M synthetic sequences, generated with IGoR's default V(D)J recombination model:
+    - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_default-model_fastas.tar.gz)
+    - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/synthetic_default-model_minimal.tar.gz)
+  - Ten batches of 100M synthetic sequences, generated with subject-specific recombination models, inferred by IGoR using 500,000 unmutated antibody sequences from each subject:
+    -  [**Subject-specific IGoR models**](http://burtonlab.s3.amazonaws.com/GRP_github_data/subject-specific_igor_models.tar.gz)
+    - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_subject-specific-models_fastas.tar.gz)
+    - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/synthetic_subject-specific-models_minimal.tar.gz)
 
 ## Requirements
 
