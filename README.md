@@ -1,6 +1,6 @@
 # The Great Repertoire Project
 
-This repository contains code and data used for our study of the baseline human antibody repertoire. Briefly, we performed ultra-deep sequencing of the antibody repertoires of 10 healthy, adult subjects (approxmately 3 billion total antibody sequences). The Great Repertoire Project revealed a massively diverse repertoire with surprisingly high overlap between the repertoires of different subjects.
+This repository contains code and data used in our study of the baseline human antibody repertoire. Briefly, we performed ultra-deep sequencing of the antibody repertoires of 10 healthy, adult subjects (approxmately 3 billion total antibody sequences). The Great Repertoire Project revealed a massively diverse repertoire and, while the repertoires of individual subjects were clearly distinguishable, we found a surprisingly high level of repertoire overlap between individuals.
 
 ## Code
 The code used in this project is assembled into a series of Juypter notecooks. There are two sets of notebooks, those containing code used for [DATA PROCESSING](https://github.com/briney/grp_paper/tree/master/data_processing) and those containing code used to [MAKE FIGURES](https://github.com/briney/grp_paper/tree/master/make_figures). GitHub will render each of the notebooks, but the code cannot be executed from within GitHub. If you'd like to actually run the code contained in the notebooks, you must clone the repository.
@@ -59,7 +59,7 @@ For each subject, there are a total of 18 samples: 3 technical replicates of eac
 Due to technical issues, the sequence data for subject 326797 was spread across two HiSeq flowcells. Thus, the raw FASTQs and FASTQC results can be downloaded in two separate batches. Starting with the first processed dataset (UMI-corrected consensus FASTAs), reads from both flowcells were pooled.  
 
 ### Synthetic antibody sequences 
-We generated synthetic antibody sequences using [IGoR](https://github.com/qmarcou/IGoR). Two datasets of synthetic sequences are available. As with the repertoire sequencing datasets above, the annotated datasets are quite large (uncompressed, each exceeds 1TB in size).
+We generated synthetic antibody sequences using [IGoR](https://github.com/qmarcou/IGoR). Three datasets of synthetic sequences are available. As with the repertoire sequencing datasets above, the annotated datasets are quite large (uncompressed, each exceeds 1TB in size).
 
   - Ten batches of 100M synthetic sequences, generated with IGoR's default V(D)J recombination model:
     - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_default-model_fastas.tar.gz)
@@ -69,6 +69,10 @@ We generated synthetic antibody sequences using [IGoR](https://github.com/qmarco
     -  [**Subject-specific IGoR models**](http://burtonlab.s3.amazonaws.com/GRP_github_data/subject-specific_igor_models.tar.gz)
     - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_subject-specific-models_fastas.tar.gz)
     - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/synthetic_subject-specific-models_minimal.tar.gz)
+  - Ten batches of 100M synthetic sequences, generated with a single "combined subject" recombination model, in which a pool of 50,000 unmutated antibody sequences from each subject were used to infer the model:
+    -  [**Combined subject IGoR model**](http://burtonlab.s3.amazonaws.com/GRP_github_data/combined_igor_subject-specific_model_50k-each.tar.gz)
+    - [**FASTAs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_combined-subject-model-50k-each_fastas.tar.gz)
+    - [**Annotated CSVs**](http://burtonlab.s3.amazonaws.com/GRP_github_data/igor_synthetic_100M_combined-subject-model-50k-each_minimal.tar.gz)
 
 ## Requirements
 
